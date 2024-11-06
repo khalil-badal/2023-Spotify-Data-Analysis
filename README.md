@@ -68,3 +68,26 @@ Overview of Dataset
 print ("Rows:", df.shape[0])
 print ("Columns:", df.shape[1])
 
+```
+- What are the data types of each column? Are there any missing values?
+  
+```python
+# Identify the number of data types in each column
+print(df.dtypes)
+
+# Check for missing values in each column
+print(df.isnull().sum())
+
+```
+In this spreadsheet, we can see that the key "C" is not found in any of the songs, and there are song that has a missing key 
+This is an obvious pattern because C major is one of the most common key in songwriting
+
+```python
+# Use pandas to fill every song that has a missing key with "C"
+df.iloc[:, 15] = df.iloc[:, 15].fillna("C")
+
+```
+Basic Descriptive Statistics
+
+![image](https://github.com/user-attachments/assets/c6a6c5f8-20e5-4100-af5a-7eaa946f0c1e)
+
