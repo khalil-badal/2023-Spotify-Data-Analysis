@@ -1,7 +1,8 @@
-#### Python - Exploratory Data Analysis on Spotify 2023 Dataset
-# GUIDE QUESTIONS:
+## Python - Exploratory Data Analysis on Spotify 2023 
+### GUIDE QUESTIONS:
 
-Overview of Dataset -How many rows and columns does the dataset contain?
+#### Overview of Dataset 
+-How many rows and columns does the dataset contain?
 
 What are the data types of each column? Are there any missing values?
 Basic Descriptive Statistics
