@@ -469,4 +469,11 @@ Spotify appears to favor the most popular tracks based on the number of tracks i
 
 - Songwriting Trends: A Reliance Towards Major Keys
 Tracks in Major mode have a higher total stream count compared to Minor mode. This could be because listeners to prefer to listen to songs that are in major key, which has a happy vibe compared to minor key that has a sad or dark vibe. Another contributing factor could be that it is because 
-writers and producers prefer to write in major key because it is easier to write hooks in this way. 
+writers and producers prefer to write in major key because it is easier to write hooks in this way.
+
+
+
+
+https://www.youtube.com/@RickBeato
+https://musicalligator.com/blog/best-time-to-release-music/
+https://www.kaggle.com/code/maurosteban99/eda-l-spotify-songs-2023
