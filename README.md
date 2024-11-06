@@ -63,7 +63,7 @@ df.tail()
 ![image](https://github.com/user-attachments/assets/2d5c4724-15c7-46d3-b240-0bf4953cb12c)
 
 
-Overview of Dataset
+## Overview of Dataset
 
 - How many rows and columns does the dataset contain?
 
@@ -74,7 +74,6 @@ print ("Rows:", df.shape[0])
 print ("Columns:", df.shape[1])
 ```
 ![image](https://github.com/user-attachments/assets/f5d87cbd-d371-4a36-a1e5-bafd07026247)
-
 
 
 - What are the data types of each column? Are there any missing values?
@@ -101,7 +100,7 @@ In this spreadsheet, we can see that the key "C" is not found in any of the song
 This is an obvious pattern because C major is one of the most common key in songwriting
 Use pandas to fill every song that has a missing key with "C"
 
-Basic Descriptive Statistics
+## Basic Descriptive Statistics
 
 ```python
 # Summary statistics for numerical columns
@@ -170,7 +169,7 @@ plt.tight_layout(rect=[0, 0.03, 1, 0.95])
 plt.show()
 
  ```
-Top Performers
+## Top Performers
 
 - Which track has the highest number of streams? Display the top 5 most streamed tracks.
 
