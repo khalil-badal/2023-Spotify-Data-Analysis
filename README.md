@@ -2,7 +2,7 @@
 ### GUIDE QUESTIONS:
 
 #### Overview of Dataset 
--How many rows and columns does the dataset contain?
+- How many rows and columns does the dataset contain?
 
 What are the data types of each column? Are there any missing values?
 Basic Descriptive Statistics
