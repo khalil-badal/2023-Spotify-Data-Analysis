@@ -83,15 +83,14 @@ print ("Columns:", df.shape[1])
 print(df.dtypes)
 ```
 ![image](https://github.com/user-attachments/assets/fc92f71d-b585-49d3-8693-0c6f9a0908c5)
-```python
+
 # Check for missing values in each column
-```
+
 ![image](https://github.com/user-attachments/assets/68585687-6e6f-42f0-a734-960479f85e45)
 
 ```python
 print(df.isnull().sum())
 
-```python
 # Use pandas to fill every song that has a missing key with "C"
 df.iloc[:, 15] = df.iloc[:, 15].fillna("C")
 
@@ -105,9 +104,12 @@ Use pandas to fill every song that has a missing key with "C"
 ```python
 # Summary statistics for numerical columns
 print(df.describe())
-
 ```
-What are the mean, median, and standard deviation of the streams column?
+![image](https://github.com/user-attachments/assets/7dabe9b5-0778-44d4-8277-8376ae075342)
+
+
+
+- What are the mean, median, and standard deviation of the streams column?
 
 ```python
 # Convert the 'streams' column to numeric, setting errors='coerce' to turn non-numeric values to NaN
@@ -127,7 +129,7 @@ print ("Median of the number of streams:", median_streams)
 print ("Standard Deviation of the number of streams:", std_streams)
 
 ```
-What is the distribution of released_year and artist_count? Are there any noticeable trends or outliers?
+- What is the distribution of released_year and artist_count? Are there any noticeable trends or outliers?
 
 ```python
 # Using seaborn, set up a figure with a 2x2 grid of subplots, specifying the figure size for better visualization
