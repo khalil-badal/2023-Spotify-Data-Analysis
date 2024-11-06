@@ -464,8 +464,9 @@ This dataset proved that solo artists became the most listened to in 2023, follo
 - Top Performers
 "Blinding Lights" by The Weeknd has the highest number of streams, followed by "Shape of You" by Ed Sheeran and "Someone You Loved" by Lewis Capaldi. Taylor Swift is the artist with the most tracks in the dataset, followed by The Weeknd and Bad Bunny.
 
-Platform Popularity: Spotify appears to favor the most popular tracks based on the number of tracks in its playlists compared to Spotify charts and Apple playlists.
+- Platform Popularity
+Spotify appears to favor the most popular tracks based on the number of tracks in its playlists compared to Spotify charts and Apple playlists.
 
-Songwriting Trends: A Reliance Towards Major Keys
+- Songwriting Trends: A Reliance Towards Major Keys
 Tracks in Major mode have a higher total stream count compared to Minor mode. This could be because listeners to prefer to listen to songs that are in major key, which has a happy vibe compared to minor key that has a sad or dark vibe. Another contributing factor could be that it is because 
 writers and producers prefer to write in major key because it is easier to write hooks in this way. 
