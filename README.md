@@ -423,7 +423,7 @@ else:
 Based on the graph above, songs in Major mode are more streamed than Minor modes
 
 - Do certain genres or artists consistently appear in more playlists or charts? Perform an analysis to compare the most frequently appearing artists in playlists or charts.
-- 
+  
 ```python
 # Ensure columns used for playlist counts are numeric for aggregation
 platform_columns = ['in_spotify_playlists', 'in_apple_playlists', 'in_deezer_playlists']
