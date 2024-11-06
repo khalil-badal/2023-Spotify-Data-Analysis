@@ -53,11 +53,16 @@ df = pd.read_csv('spotify-2023.csv', encoding='ISO-8859-1')
 
 # Display the first five rows of the dataframe
 df.head()
+```
+![image](https://github.com/user-attachments/assets/ee80c16f-4cfd-4308-833c-b5dd3a6ec85e)
 
+```python
 # Display the first last five rows of the dataframe
 df.tail()
-
 ```
+![image](https://github.com/user-attachments/assets/2d5c4724-15c7-46d3-b240-0bf4953cb12c)
+
+
 Overview of Dataset
 
 - How many rows and columns does the dataset contain?
@@ -78,10 +83,6 @@ print(df.dtypes)
 # Check for missing values in each column
 print(df.isnull().sum())
 
-```
-In this spreadsheet, we can see that the key "C" is not found in any of the songs, and there are song that has a missing key 
-This is an obvious pattern because C major is one of the most common key in songwriting
-
 ```python
 # Use pandas to fill every song that has a missing key with "C"
 df.iloc[:, 15] = df.iloc[:, 15].fillna("C")
@@ -89,5 +90,75 @@ df.iloc[:, 15] = df.iloc[:, 15].fillna("C")
 ```
 Basic Descriptive Statistics
 
-![image](https://github.com/user-attachments/assets/c6a6c5f8-20e5-4100-af5a-7eaa946f0c1e)
+```python
+# Summary statistics for numerical columns
+print(df.describe())
+
+```
+What are the mean, median, and standard deviation of the streams column?
+
+```python
+# Convert the 'streams' column to numeric, setting errors='coerce' to turn non-numeric values to NaN
+df.loc[:, 'streams'] = pd.to_numeric(df['streams'], errors='coerce')
+
+# Calculate the statistics and round to 2 decimal places
+# Calculate the mean
+mean_streams = round(df['streams'].mean(), 2)
+# Calculate the median
+median_streams = round(df['streams'].median(), 2)
+# Calculate the mode
+std_streams = round(df['streams'].std(), 2)
+
+# Display the output
+print ("Mean of the number of streams:", mean_streams)
+print ("Median of the number of streams:", median_streams)
+print ("Standard Deviation of the number of streams:", std_streams)
+
+```
+What is the distribution of released_year and artist_count? Are there any noticeable trends or outliers?
+
+```python
+# Using seaborn, set up a figure with a 2x2 grid of subplots, specifying the figure size for better visualization
+fig, axes = plt.subplots(2, 2, figsize=(14, 10))
+
+# Adding a title for the entire figure
+fig.suptitle('Distribution and Trends of Released Year and Artist Count')
+
+# Plotting a histogram for 'released_year' with 20 bins, enabling kernel density estimation (KDE), and setting color
+sns.histplot(df['released_year'], bins=20, kde=True, ax=axes[0, 0], color='purple')
+# Setting the title, x-axis, and y-axis labels for the released_year histogram
+axes[0, 0].set_title('Distribution of Released Year')
+axes[0, 0].set_xlabel('Released Year')
+axes[0, 0].set_ylabel('Frequency')
+
+# Plotting a histogram for 'artist_count' with 20 bins, enabling KDE, and setting a different color
+sns.histplot(df['artist_count'], bins=20, kde=True, ax=axes[0, 1], color='yellow')
+# Setting the title, x-axis, and y-axis labels for the artist_count histogram
+axes[0, 1].set_title('Distribution of Artist Count')
+axes[0, 1].set_xlabel('Artist Count')
+axes[0, 1].set_ylabel('Frequency')
+
+# Creating a boxplot for 'released_year' to show data distribution, trends, and outliers
+sns.boxplot(x=df['released_year'], ax=axes[1, 0], color='purple')
+# Setting the title and x-axis label for the released_year boxplot
+axes[1, 0].set_title('Boxplot of Released Year')
+axes[1, 0].set_xlabel('Released Year')
+
+# Creating a boxplot for 'artist_count' to show data distribution, trends, and outliers
+sns.boxplot(x=df['artist_count'], ax=axes[1, 1], color='yellow')
+# Setting the title and x-axis label for the artist_count boxplot
+axes[1, 1].set_title('Boxplot of Artist Count')
+axes[1, 1].set_xlabel('Artist Count')
+
+# Adjusting layout to reduce overlap and improve appearance; adding space for the main title
+plt.tight_layout(rect=[0, 0.03, 1, 0.95])
+
+# Displaying the plots
+plt.show()
+
+ ```
+Top Performers
+
+- Which track has the highest number of streams? Display the top 5 most streamed tracks.
+
 
