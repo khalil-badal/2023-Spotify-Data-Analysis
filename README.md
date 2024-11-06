@@ -72,15 +72,24 @@ Overview of Dataset
 # Identify the number of rows
 print ("Rows:", df.shape[0])
 print ("Columns:", df.shape[1])
-
 ```
+![image](https://github.com/user-attachments/assets/f5d87cbd-d371-4a36-a1e5-bafd07026247)
+
+
+
 - What are the data types of each column? Are there any missing values?
   
 ```python
 # Identify the number of data types in each column
 print(df.dtypes)
-
+```
+![image](https://github.com/user-attachments/assets/fc92f71d-b585-49d3-8693-0c6f9a0908c5)
+```python
 # Check for missing values in each column
+```
+![image](https://github.com/user-attachments/assets/68585687-6e6f-42f0-a734-960479f85e45)
+
+```python
 print(df.isnull().sum())
 
 ```python
@@ -88,6 +97,10 @@ print(df.isnull().sum())
 df.iloc[:, 15] = df.iloc[:, 15].fillna("C")
 
 ```
+In this spreadsheet, we can see that the key "C" is not found in any of the songs, and there are song that has a missing key 
+This is an obvious pattern because C major is one of the most common key in songwriting
+Use pandas to fill every song that has a missing key with "C"
+
 Basic Descriptive Statistics
 
 ```python
