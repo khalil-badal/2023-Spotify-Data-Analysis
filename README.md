@@ -403,10 +403,10 @@ elif total_streams_major < total_streams_minor:
     print("Tracks in Minor mode have a higher total stream count.")
 else:
     print("Tracks in Major and Minor modes have the same total stream count.")
-
+```
 ![image](https://github.com/user-attachments/assets/8db9b005-11c0-4562-a07a-9ce8e9e0a5e6)
 
-```
+
 Based on the graph above, songs in Major mode are more streamed than Minor modes
 
 - Do certain genres or artists consistently appear in more playlists or charts? Perform an analysis to compare the most frequently appearing artists in playlists or charts.
