@@ -1,4 +1,9 @@
 ## Python - Exploratory Data Analysis on Spotify 2023 
+
+Welcome to my Exploratory Data Analysis in Python! This repository showcases Spotify’s 2023 metrics, uncovering trends like the most-streamed songs, top artists, genre preferences, and more. In this Data Analysis, we will be using different Python libraries such as Pandas, Matplotlib and Seaborn. 
+
+
+
 ### GUIDE QUESTIONS:
 
 #### Overview of Dataset 
@@ -27,3 +32,5 @@
 #### Advanced Analysis
 - Based on the streams data, can you identify any patterns among tracks with the same key or mode (Major vs. Minor)?
 - Do certain genres or artists consistently appear in more playlists or charts? Perform an analysis to compare the most frequently appearing artists in playlists or charts.
+
+
