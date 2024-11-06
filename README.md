@@ -190,7 +190,8 @@ print(top_tracks[['track_name', 'streams']])
 ## Temporal Trends
 - Analyze the trends in the number of tracks released over time. Plot the number of tracks released per year.
 
-- # Plot the number of tracks released per year
+```python
+# Plot the number of tracks released per year
 
 # Setting the figure size to make the plot larger and easier to read
 plt.figure(figsize=(10, 6))
@@ -213,6 +214,7 @@ plt.xticks(rotation=45)
 # Display the plot
 plt.show()
 
+```
 ![image](https://github.com/user-attachments/assets/19a9d63d-4ddb-4a29-bdb0-c645dc34b62e)
 
 From the table above, we can conclude that most of the tracks in the dataframe are songs from the 2020 onwards.
