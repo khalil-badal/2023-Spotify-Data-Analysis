@@ -271,6 +271,8 @@ plt.title("Correlations with Streams (RdBu_r Colormap)")
 plt.show()
 
 ```
+![image](https://github.com/user-attachments/assets/b816bf96-994a-481f-b8a0-c98c64ac3f5b)
+
 The heatmap shows that all musical attributes have a weak negative correlation with the number of streams a track receives. Among these, speechiness has the strongest inverse relationship with streams, meaning that tracks with lower speechiness tend to have slightly higher stream counts.
 
 - Is there a correlation between danceability_% and energy_%?
