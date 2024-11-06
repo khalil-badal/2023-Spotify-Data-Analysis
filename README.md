@@ -84,17 +84,17 @@ print(df.dtypes)
 ```
 ![image](https://github.com/user-attachments/assets/fc92f71d-b585-49d3-8693-0c6f9a0908c5)
 
-# Check for missing values in each column
-
-![image](https://github.com/user-attachments/assets/68585687-6e6f-42f0-a734-960479f85e45)
+- Check for missing values in each column
 
 ```python
 print(df.isnull().sum())
 
 # Use pandas to fill every song that has a missing key with "C"
 df.iloc[:, 15] = df.iloc[:, 15].fillna("C")
-
 ```
+![image](https://github.com/user-attachments/assets/68585687-6e6f-42f0-a734-960479f85e45)
+
+
 In this spreadsheet, we can see that the key "C" is not found in any of the songs, and there are song that has a missing key 
 This is an obvious pattern because C major is one of the most common key in songwriting
 Use pandas to fill every song that has a missing key with "C"
