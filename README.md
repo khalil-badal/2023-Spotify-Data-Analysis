@@ -458,8 +458,12 @@ Majority of top music from 2023 came from the 20th century, which implies that m
 - Legacy of Music
 This dataset proved that music is timeless, despite the domination of music from the 20th century, some songs from the 19th are still listened to by people.
 
-- The Rise of Solo Artists and the Decline of Bands in Mainstream Music
+- The domination of solo artists in Mainstream Music
 This dataset proved that solo artists became the most listened to in 2023, followed by duo, which came from collaborations from solo artists, and lastly followed by music credited to three or more people (band).
+
+- January as the preferred month for releasing music
+Releasing music early in the year can give it a head start on the charts, potentially leading to year-end solid positions and boosting an artist's career. Record labels often capitalize on the holiday season to build anticipation for these releases. It can also be observed that there are
+less songs in "ber months" to avoid clashing with christmas songs. 
 
 - Top Performers
 "Blinding Lights" by The Weeknd has the highest number of streams, followed by "Shape of You" by Ed Sheeran and "Someone You Loved" by Lewis Capaldi. Taylor Swift is the artist with the most tracks in the dataset, followed by The Weeknd and Bad Bunny.
@@ -471,9 +475,10 @@ Spotify appears to favor the most popular tracks based on the number of tracks i
 Tracks in Major mode have a higher total stream count compared to Minor mode. This could be because listeners to prefer to listen to songs that are in major key, which has a happy vibe compared to minor key that has a sad or dark vibe. Another contributing factor could be that it is because 
 writers and producers prefer to write in major key because it is easier to write hooks in this way.
 
-
-
-
+## References
 https://www.youtube.com/@RickBeato
 https://musicalligator.com/blog/best-time-to-release-music/
 https://www.kaggle.com/code/maurosteban99/eda-l-spotify-songs-2023
+
+## Author
+Khalil T. Badal
