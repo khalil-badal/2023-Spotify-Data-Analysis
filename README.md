@@ -37,7 +37,7 @@ Welcome to my Exploratory Data Analysis in Python! This repository showcases Spo
 - Based on the streams data, can you identify any patterns among tracks with the same key or mode (Major vs. Minor)?
 - Do certain genres or artists consistently appear in more playlists or charts? Perform an analysis to compare the most frequently appearing artists in playlists or charts.
 
-## Python Codes
+## Codes, Results and Visualizations
 
 ```python
 # Start
@@ -61,6 +61,7 @@ df.tail()
 ```
 ![image](https://github.com/user-attachments/assets/2d5c4724-15c7-46d3-b240-0bf4953cb12c)
 
+(refer to the attached csv file for the whole dataset)
 
 ## Overview of Dataset
 
