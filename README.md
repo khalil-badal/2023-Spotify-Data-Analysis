@@ -67,17 +67,15 @@ print(df.dtypes)
 
 
 ```python
-print(df.isnull().sum())
 # Check for missing values in each column
+print(df.isnull().sum())
+```
+![image](https://github.com/user-attachments/assets/68585687-6e6f-42f0-a734-960479f85e45)
+```python
 # Use pandas to fill every song that has a missing key with "C"
 df.iloc[:, 15] = df.iloc[:, 15].fillna("C")
 ```
-![image](https://github.com/user-attachments/assets/68585687-6e6f-42f0-a734-960479f85e45)
-
-
-In this spreadsheet, we can see that the key "C" is not found in any of the songs, and there are song that has a missing key 
-This is an obvious pattern because C major is one of the most common key in songwriting
-Use pandas to fill every song that has a missing key with "C"
+In this spreadsheet, we can see that the key "C" is not found in any of the songs, and there are songs that have a missing key. This is an obvious pattern because C major is one of the most common keys in songwriting. Use Pandas to fill every song that has a missing key with "C."
 
 ## Basic Descriptive Statistics
 
@@ -154,7 +152,7 @@ plt.show()
 
  ```
 ![image](https://github.com/user-attachments/assets/9ac464da-76c2-4be6-bb71-ac90377b664e)
-In the table above we can conlude that music from the 20th century has been streamed the most, from this we can also conclude that music from the 19th century are considered as outliers. By observing the distribution of artist count, we can tell that solo artists has been the most dominant followed by duo, and trio which are mostly features and collaborations. We can conclude that bands with 3 or more members have been outliers.
+In the graph above, we can conclude that music from the 20th century have been streamed the most. From this, we can also conclude that music from the 19th century are considered outliers. By observing the distribution of artist count, we can tell that solo artists have been the most dominant, followed by duos and trios, which are mostly features and collaborations. We can conclude that bands with 3 or more members have been outliers.
 
 ## Top Performers
 
@@ -200,7 +198,7 @@ plt.show()
 ```
 ![image](https://github.com/user-attachments/assets/19a9d63d-4ddb-4a29-bdb0-c645dc34b62e)
 
-From the table above, we can conclude that most of the tracks in the dataframe are songs from the 2020 onwards.
+From the graph above, we can conclude that most of the tracks in the dataframe are songs from the 2020 onwards.
 
 - Does the number of tracks released per month follow any noticeable patterns? Which month sees the most releases?
 
@@ -242,7 +240,7 @@ plt.show()
 ```
 ![image](https://github.com/user-attachments/assets/a9b2ec4c-1573-4d7f-9b50-c32639f4f879)
 
-From the table above, we can conlude that the Month of January has the most releases, this could be because record labels prefer to release their predicted hit songs as a way to jumpstart a year.
+From the graph above, we can conlude that the Month of January has the most releases, this could be because record labels prefer to release their predicted hit songs as a way to jumpstart a year.
 
 ## Genre and Music Characteristics
 
