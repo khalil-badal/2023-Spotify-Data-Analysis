@@ -240,7 +240,8 @@ plt.show()
 ```
 ![image](https://github.com/user-attachments/assets/a9b2ec4c-1573-4d7f-9b50-c32639f4f879)
 
-From the graph above, we can conlude that the Month of January has the most releases, this could be because record labels prefer to release their predicted hit songs as a way to jumpstart a year.
+From the graph above, we can conlude that the Month of January has the most releases, this could be due to record labels preferring to release their predicted hit songs as a way to jumpstart a year.
+
 
 ## Genre and Music Characteristics
 
